@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e7ebf0;
+  height: 100vh;
+  display:flex; 
+  flex-direction:column;
+}
+
+.title {
+  margin-top: 60px;
+}
+
+/* Welcome Navbar */
+.welcome {
+  margin-top: 20px;
+}
+.wel-title {
+  display: inline;
+  font-size: 64px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.wel-desc {
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+/* Welcome Content */
+.card {
+  cursor: pointer;
+  box-shadow: 1px solid #c8d6e5;
+  border-radius: 5px;
+}
+.card:hover {
+  transition: ease 0.3s;
+  transform: translateY(-7px);
+}
+.card .card-content {
+  padding: 10px !important;
+}
+.card-content p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.league-image {
+  object-fit: cover;
+}
+
+/* Error Handling */
+.errorServer {
+  text-align: center;
+}
+.error-img {
+  width: 70%;
+  margin-top: 20px;
+}
+.error-title {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+/* Loader Handling */
+.loader {
+  transform: translateY(100%);
+  text-align: center;
+}
+.loader p {
+  display: inline;
+  font-size: 64px;
+}
+.loader img {
+  width: 250px;
+  margin-left: 20px;
+}
+
+/* Navbar */ 
+.brand-logo {
+  margin: 0px 20px;
+}
+
+/* Standing */
+.club-logo {
+  width: 25px;
+  vertical-align: middle;
+}
+.center {
+  text-align: center;
+}
+.team:hover {
+  cursor: pointer;
+}
+.striped {
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px #c8d6e5;
+  border-radius: 5px;
+}
+.desc {
+  margin-top: 20px;
+}
+.desc-group {
+  margin-bottom: 10px;
+}
+.ucl, .uefa, .deg  {
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px; 
+  height: 5px; 
+  background-color: red
+}
+.desc-name {
+  display: inline;
+}
+
+/* Team Detail */
+.detail {
+  text-align: center;
+}
+.logo {
+  margin-top: 20px;
+  width: 200px;
+}
+.name {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin: 10px 0px;
+}
+.player-center {
+  text-align: center;
+}
+.btn {
+  margin-bottom: 10px;
+}
+
+/* Match */
+.match {
+  margin-bottom: 40px;
+}
+.matches {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.match-list {
+  margin: 20px 0px;
+}
+.card-match {
+  background-color: #1A237E;
+  box-shadow: 0px 0px 5px rgb(134, 134, 134);
+  border-radius: 5px;
+  height: 100%;
+  padding: 20px 0px;
+}
+.card-match:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-5px);
+  transition: ease .3s;
+}
+.home-team {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0;
+}
+.versus {
+  color: white;
+  margin: 10px 0px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+.away-team {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.save-wrapper {
+  text-align: right;
+  margin-right: 20px;
+}
+.save {
+  width: 30px;
+  cursor: pointer;
+}
+.match-date {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(211, 211, 211);
+}
+.card-match:hover .home-team {
+  color: black !important;
+}
+.card-match:hover .away-team {
+  color: black !important;
+}
+.card-match:hover .versus {
+  color: black !important;
+}
+.card-match:hover .match-date {
+  color: rgb(104, 104, 104);
+}
+
+/* Result */ 
+.result {
+  padding: 20px;
+}
+.home, .away {
+  text-align: center;
+}
+
+.home {
+  border: none !important;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+}
+.page-footer {
+  padding: 0 !important;
+}
+.footer-copyright .container {
+  text-align: center;
+}
+
+/* Mobile Verion */
+@media only screen and (max-width: 530px) {
+  /* Navbar */
+  .brand-logo {
+    font-size: 1.5rem !important;
+    margin: 0px;
+  }
+  .sidenav-trigger {
+    font-size: 32px;
+  }
+  .img-sidenav img {
+    height: 150px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
+  }
+
+  /* Standing */
+  .center {
+    font-size: 0.7rem;
+  }
+
+  /* Loader Handling */
+  .loader {
+    margin-top: 40px;
+    transform: translateY(50%);
+  }
+  .loader p {
+    font-size: 32px;
+  }
+  .loader img {
+    width: 200px;
+  }
+}
